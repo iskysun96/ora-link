@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Noto Sans", sans-serif; /* Set Noto Sans as the default font */
+    /* @apply bg-background text-foreground; */
+    @apply bg-orange-100 text-black;
+  }
+}

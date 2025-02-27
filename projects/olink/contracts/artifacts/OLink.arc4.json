@@ -1,0 +1,134 @@
+{
+  "name": "OLink",
+  "desc": "",
+  "methods": [
+    {
+      "name": "createApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "bootstrap",
+      "args": [
+        {
+          "name": "oraAsaId",
+          "type": "uint64"
+        },
+        {
+          "name": "customLinkPrice",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "updateCustomLinkCost",
+      "args": [
+        {
+          "name": "asaId",
+          "type": "uint64"
+        },
+        {
+          "name": "newCost",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "updateApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "deleteApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "resolveShortcode",
+      "readonly": true,
+      "args": [
+        {
+          "name": "shortcode",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "findShortcode",
+      "readonly": true,
+      "args": [
+        {
+          "name": "url",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "createShortcode",
+      "desc": "Called to generate a shortcode for a URL.",
+      "args": [
+        {
+          "name": "mbrPayment",
+          "type": "pay"
+        },
+        {
+          "name": "url",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "createCustomShortcode",
+      "desc": "Called to generate a shortcode for a URL.",
+      "args": [
+        {
+          "name": "mbrPayment",
+          "type": "pay"
+        },
+        {
+          "name": "oraPayment",
+          "type": "axfer"
+        },
+        {
+          "name": "shortcode",
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "withdraw",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    }
+  ]
+}
