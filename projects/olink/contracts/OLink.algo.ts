@@ -93,7 +93,7 @@ export class OLink extends Contract {
 
   /** Called to generate a shortcode for a URL. */
   createShortcode(mbrPayment: PayTxn, url: string): string {
-    const mbrPaymentAmount = 2500 + 400 * (url.length + 8);
+    const mbrPaymentAmount = 2500 + 400 * (url.length + 8 + 4);
 
     assert(mbrPayment.receiver === this.app.address, 'MBR Payment not sent to app address');
     assert(mbrPayment.amount === mbrPaymentAmount, 'Incorrect payment amount');
@@ -121,7 +121,7 @@ export class OLink extends Contract {
   createCustomShortcode(mbrPayment: PayTxn, oraPayment: AssetTransferTxn, shortcode: string, url: string): string {
     assert(!this.linkMap(shortcode).exists, 'Shortcode already exists');
 
-    const mbrPaymentAmount = 2500 + 400 * (url.length + shortcode.length);
+    const mbrPaymentAmount = 2500 + 400 * (url.length + shortcode.length + 4);
 
     verifyPayTxn(mbrPayment, { receiver: this.app.address, amount: mbrPaymentAmount });
     verifyAssetTransferTxn(oraPayment, {

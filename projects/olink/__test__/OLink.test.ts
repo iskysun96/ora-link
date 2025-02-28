@@ -5,7 +5,7 @@ import algosdk from 'algosdk';
 import { OLinkClient, OLinkFactory } from '../contracts/clients/OLinkClient';
 import { createTestAsset } from './utils';
 
-const fixture = algorandFixture({ testAccountFunding: algo(100) });
+const fixture = algorandFixture({ testAccountFunding: algo(1000) });
 Config.configure({ populateAppCallResources: true });
 
 let appClient: OLinkClient;
@@ -26,7 +26,7 @@ describe('OLink', () => {
 
     const createResult = await factory.send.create.createApplication({ args: [] });
     appClient = createResult.appClient;
-    await appClient.appClient.fundAppAccount({ amount: algo(1) });
+    await appClient.appClient.fundAppAccount({ amount: algo(0.2) });
 
     const assetId = await createTestAsset(testAccount, algorand, testAccount.signer);
 
@@ -42,7 +42,7 @@ describe('OLink', () => {
   test('createShortcode', async () => {
     const { testAccount, algod } = fixture.context;
     const url = 'https://algorand.co';
-    const mbrAmount = 2500 + 400 * (url.length + 8);
+    const mbrAmount = 2500 + 400 * (url.length + 8 + 4);
 
     const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
       from: testAccount.addr,
@@ -55,6 +55,7 @@ describe('OLink', () => {
       args: { mbrPayment, url },
       sender: testAccount.addr,
       signer: testAccount.signer,
+      populateAppCallResources: true,
     });
 
     expect(shortCode.return).toBe('80LQLO0I');
@@ -72,4 +73,34 @@ describe('OLink', () => {
     const resolvedUrl2 = await appClient.send.resolveShortcode({ args: { shortcode: shortCode.return! } });
     expect(resolvedUrl2.return).toBe(url);
   });
+
+  // test('createShortcode MBR payment is correct', async () => {
+  //   const { testAccount, algod } = fixture.context;
+  //   let url = 'https://test.url';
+
+  //   for (let i = 0; i < 600; i += 1) {
+  //     const mbrAmount = 2500 + 400 * (url.length + 8 + 4);
+
+  //     console.log('iteration', i, 'mbrAmount', mbrAmount, url.length + 8);
+
+  //     const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
+  //       from: testAccount.addr,
+  //       to: appClient.appAddress,
+  //       amount: mbrAmount,
+  //       // eslint-disable-next-line no-await-in-loop
+  //       suggestedParams: await algod.getTransactionParams().do(),
+  //     });
+
+  //     // eslint-disable-next-line no-await-in-loop
+  //     const result = await appClient.send.createShortcode({
+  //       args: { mbrPayment, url },
+  //       sender: testAccount.addr,
+  //       signer: testAccount.signer,
+  //     });
+
+  //     console.log(result);
+
+  //     url += 'a';
+  //   }
+  // });
 });

@@ -98,7 +98,7 @@ function App() {
     try {
       const suggestedParams = await algodClient.getTransactionParams().do();
 
-      const mbrAmount = 2500 + 400 * (url.length + 8);
+      const mbrAmount = 2500 + 400 * (url.length + 8 + 4);
 
       const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
         from: activeAccount.address,
@@ -143,7 +143,7 @@ function App() {
     try {
       const suggestedParams = await algodClient.getTransactionParams().do();
 
-      const mbrAmount = 2500 + 400 * (url.length + customShortCode.length);
+      const mbrAmount = 2500 + 400 * (url.length + customShortCode.length + 4);
 
       const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
         from: activeAccount.address,

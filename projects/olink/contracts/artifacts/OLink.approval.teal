@@ -579,12 +579,14 @@ createShortcode:
 	dupn 4
 
 	// contracts/OLink.algo.ts:96
-	// mbrPaymentAmount = 2500 + 400 * (url.length + 8)
+	// mbrPaymentAmount = 2500 + 400 * (url.length + 8 + 4)
 	intc 4 // 2500
 	intc 3 // 400
 	frame_dig -2 // url: string
 	len
 	intc 5 // 8
+	+
+	intc 2 // 4
 	+
 	*
 	+
@@ -822,13 +824,15 @@ createCustomShortcode:
 	assert
 
 	// contracts/OLink.algo.ts:124
-	// mbrPaymentAmount = 2500 + 400 * (url.length + shortcode.length)
+	// mbrPaymentAmount = 2500 + 400 * (url.length + shortcode.length + 4)
 	intc 4 // 2500
 	intc 3 // 400
 	frame_dig -4 // url: string
 	len
 	frame_dig -3 // shortcode: string
 	len
+	+
+	intc 2 // 4
 	+
 	*
 	+
