@@ -2312,7 +2312,7 @@
   },
   {
     "teal": 583,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       581,
       582
@@ -2320,14 +2320,14 @@
   },
   {
     "teal": 584,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       583
     ]
   },
   {
     "teal": 585,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       584,
       585
@@ -2335,14 +2335,14 @@
   },
   {
     "teal": 586,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       586
     ]
   },
   {
     "teal": 587,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       587,
       588
@@ -2350,42 +2350,42 @@
   },
   {
     "teal": 588,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       589
     ]
   },
   {
     "teal": 589,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       590
     ]
   },
   {
     "teal": 590,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       591
     ]
   },
   {
     "teal": 591,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       592
     ]
   },
   {
     "teal": 592,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       593
     ]
   },
   {
     "teal": 593,
-    "source": "contracts/OLink.algo.ts:96",
+    "source": "contracts/OLink.algo.ts:97",
     "pc": [
       594,
       595
@@ -2393,7 +2393,7 @@
   },
   {
     "teal": 597,
-    "source": "contracts/OLink.algo.ts:98",
+    "source": "contracts/OLink.algo.ts:99",
     "pc": [
       596,
       597
@@ -2401,7 +2401,7 @@
   },
   {
     "teal": 598,
-    "source": "contracts/OLink.algo.ts:98",
+    "source": "contracts/OLink.algo.ts:99",
     "pc": [
       598,
       599
@@ -2409,7 +2409,7 @@
   },
   {
     "teal": 599,
-    "source": "contracts/OLink.algo.ts:98",
+    "source": "contracts/OLink.algo.ts:99",
     "pc": [
       600,
       601
@@ -2417,14 +2417,14 @@
   },
   {
     "teal": 600,
-    "source": "contracts/OLink.algo.ts:98",
+    "source": "contracts/OLink.algo.ts:99",
     "pc": [
       602
     ]
   },
   {
     "teal": 603,
-    "source": "contracts/OLink.algo.ts:98",
+    "source": "contracts/OLink.algo.ts:99",
     "errorMessage": "MBR Payment not sent to app address",
     "pc": [
       603
@@ -2432,7 +2432,7 @@
   },
   {
     "teal": 607,
-    "source": "contracts/OLink.algo.ts:99",
+    "source": "contracts/OLink.algo.ts:100",
     "pc": [
       604,
       605
@@ -2440,7 +2440,7 @@
   },
   {
     "teal": 608,
-    "source": "contracts/OLink.algo.ts:99",
+    "source": "contracts/OLink.algo.ts:100",
     "pc": [
       606,
       607
@@ -2448,7 +2448,7 @@
   },
   {
     "teal": 609,
-    "source": "contracts/OLink.algo.ts:99",
+    "source": "contracts/OLink.algo.ts:100",
     "pc": [
       608,
       609
@@ -2456,14 +2456,14 @@
   },
   {
     "teal": 610,
-    "source": "contracts/OLink.algo.ts:99",
+    "source": "contracts/OLink.algo.ts:100",
     "pc": [
       610
     ]
   },
   {
     "teal": 613,
-    "source": "contracts/OLink.algo.ts:99",
+    "source": "contracts/OLink.algo.ts:100",
     "errorMessage": "Incorrect payment amount",
     "pc": [
       611
@@ -2471,7 +2471,7 @@
   },
   {
     "teal": 617,
-    "source": "contracts/OLink.algo.ts:101",
+    "source": "contracts/OLink.algo.ts:102",
     "pc": [
       612,
       613
@@ -2479,14 +2479,14 @@
   },
   {
     "teal": 618,
-    "source": "contracts/OLink.algo.ts:101",
+    "source": "contracts/OLink.algo.ts:102",
     "pc": [
       614
     ]
   },
   {
     "teal": 619,
-    "source": "contracts/OLink.algo.ts:101",
+    "source": "contracts/OLink.algo.ts:102",
     "pc": [
       615,
       616
@@ -2494,14 +2494,14 @@
   },
   {
     "teal": 623,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       617
     ]
   },
   {
     "teal": 624,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       618,
       619
@@ -2509,7 +2509,7 @@
   },
   {
     "teal": 629,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       620,
       621
@@ -2517,7 +2517,7 @@
   },
   {
     "teal": 630,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       622,
       623
@@ -2525,14 +2525,14 @@
   },
   {
     "teal": 631,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       624
     ]
   },
   {
     "teal": 632,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       625,
       626,
@@ -2541,7 +2541,7 @@
   },
   {
     "teal": 636,
-    "source": "contracts/OLink.algo.ts:104",
+    "source": "contracts/OLink.algo.ts:105",
     "pc": [
       628,
       629
@@ -2549,7 +2549,7 @@
   },
   {
     "teal": 637,
-    "source": "contracts/OLink.algo.ts:104",
+    "source": "contracts/OLink.algo.ts:105",
     "pc": [
       630,
       631
@@ -2557,7 +2557,7 @@
   },
   {
     "teal": 638,
-    "source": "contracts/OLink.algo.ts:104",
+    "source": "contracts/OLink.algo.ts:105",
     "pc": [
       632,
       633,
@@ -2566,7 +2566,7 @@
   },
   {
     "teal": 639,
-    "source": "contracts/OLink.algo.ts:104",
+    "source": "contracts/OLink.algo.ts:105",
     "pc": [
       635,
       636
@@ -2574,7 +2574,7 @@
   },
   {
     "teal": 644,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       637,
       638
@@ -2582,28 +2582,28 @@
   },
   {
     "teal": 645,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       639
     ]
   },
   {
     "teal": 646,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       640
     ]
   },
   {
     "teal": 647,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       641
     ]
   },
   {
     "teal": 648,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       642,
       643,
@@ -2612,42 +2612,42 @@
   },
   {
     "teal": 649,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       645
     ]
   },
   {
     "teal": 650,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       646
     ]
   },
   {
     "teal": 651,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       647
     ]
   },
   {
     "teal": 652,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       648
     ]
   },
   {
     "teal": 653,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       649
     ]
   },
   {
     "teal": 654,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       650,
       651,
@@ -2656,7 +2656,7 @@
   },
   {
     "teal": 660,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       653,
       654
@@ -2664,28 +2664,28 @@
   },
   {
     "teal": 661,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       655
     ]
   },
   {
     "teal": 662,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       656
     ]
   },
   {
     "teal": 663,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       657
     ]
   },
   {
     "teal": 664,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       658,
       659,
@@ -2694,28 +2694,28 @@
   },
   {
     "teal": 665,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       661
     ]
   },
   {
     "teal": 666,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       662
     ]
   },
   {
     "teal": 667,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       663
     ]
   },
   {
     "teal": 670,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "errorMessage": "box value does not exist: this.linkMap(shortcode).value",
     "pc": [
       664
@@ -2723,7 +2723,7 @@
   },
   {
     "teal": 671,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       665,
       666,
@@ -2732,7 +2732,7 @@
   },
   {
     "teal": 672,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       668,
       669
@@ -2740,14 +2740,14 @@
   },
   {
     "teal": 673,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       670
     ]
   },
   {
     "teal": 674,
-    "source": "contracts/OLink.algo.ts:106",
+    "source": "contracts/OLink.algo.ts:107",
     "pc": [
       671,
       672,
@@ -2756,7 +2756,7 @@
   },
   {
     "teal": 679,
-    "source": "contracts/OLink.algo.ts:107",
+    "source": "contracts/OLink.algo.ts:108",
     "pc": [
       674,
       675,
@@ -2790,7 +2790,7 @@
   },
   {
     "teal": 680,
-    "source": "contracts/OLink.algo.ts:107",
+    "source": "contracts/OLink.algo.ts:108",
     "pc": [
       702,
       703
@@ -2798,14 +2798,14 @@
   },
   {
     "teal": 681,
-    "source": "contracts/OLink.algo.ts:107",
+    "source": "contracts/OLink.algo.ts:108",
     "pc": [
       704
     ]
   },
   {
     "teal": 682,
-    "source": "contracts/OLink.algo.ts:107",
+    "source": "contracts/OLink.algo.ts:108",
     "pc": [
       705,
       706
@@ -2813,21 +2813,21 @@
   },
   {
     "teal": 686,
-    "source": "contracts/OLink.algo.ts:108",
+    "source": "contracts/OLink.algo.ts:109",
     "pc": [
       707
     ]
   },
   {
     "teal": 687,
-    "source": "contracts/OLink.algo.ts:108",
+    "source": "contracts/OLink.algo.ts:109",
     "pc": [
       708
     ]
   },
   {
     "teal": 690,
-    "source": "contracts/OLink.algo.ts:105",
+    "source": "contracts/OLink.algo.ts:106",
     "pc": [
       709,
       710,
@@ -2836,7 +2836,7 @@
   },
   {
     "teal": 695,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       712,
       713
@@ -2844,28 +2844,28 @@
   },
   {
     "teal": 696,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       714
     ]
   },
   {
     "teal": 697,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       715
     ]
   },
   {
     "teal": 698,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       716
     ]
   },
   {
     "teal": 699,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       717,
       718,
@@ -2874,42 +2874,42 @@
   },
   {
     "teal": 700,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       720
     ]
   },
   {
     "teal": 701,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       721
     ]
   },
   {
     "teal": 702,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       722
     ]
   },
   {
     "teal": 703,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       723
     ]
   },
   {
     "teal": 704,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       724
     ]
   },
   {
     "teal": 705,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       725,
       726
@@ -2917,28 +2917,28 @@
   },
   {
     "teal": 706,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       727
     ]
   },
   {
     "teal": 707,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       728
     ]
   },
   {
     "teal": 708,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       729
     ]
   },
   {
     "teal": 709,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       730,
       731,
@@ -2947,28 +2947,28 @@
   },
   {
     "teal": 710,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       733
     ]
   },
   {
     "teal": 711,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       734
     ]
   },
   {
     "teal": 712,
-    "source": "contracts/OLink.algo.ts:111",
+    "source": "contracts/OLink.algo.ts:112",
     "pc": [
       735
     ]
   },
   {
     "teal": 716,
-    "source": "contracts/OLink.algo.ts:112",
+    "source": "contracts/OLink.algo.ts:113",
     "pc": [
       736,
       737
@@ -2976,7 +2976,7 @@
   },
   {
     "teal": 717,
-    "source": "contracts/OLink.algo.ts:112",
+    "source": "contracts/OLink.algo.ts:113",
     "pc": [
       738,
       739,
@@ -2985,7 +2985,7 @@
   },
   {
     "teal": 724,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       741,
       742
@@ -2993,21 +2993,21 @@
   },
   {
     "teal": 725,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       743
     ]
   },
   {
     "teal": 726,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       744
     ]
   },
   {
     "teal": 727,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       745,
       746
@@ -3015,7 +3015,7 @@
   },
   {
     "teal": 728,
-    "source": "contracts/OLink.algo.ts:103",
+    "source": "contracts/OLink.algo.ts:104",
     "pc": [
       747,
       748,
@@ -3024,14 +3024,14 @@
   },
   {
     "teal": 733,
-    "source": "contracts/OLink.algo.ts:116",
+    "source": "contracts/OLink.algo.ts:117",
     "pc": [
       750
     ]
   },
   {
     "teal": 736,
-    "source": "contracts/OLink.algo.ts:116",
+    "source": "contracts/OLink.algo.ts:117",
     "errorMessage": "Failed to create shortcode",
     "pc": [
       751
@@ -3039,7 +3039,7 @@
   },
   {
     "teal": 740,
-    "source": "contracts/OLink.algo.ts:117",
+    "source": "contracts/OLink.algo.ts:118",
     "pc": [
       752
     ]
@@ -3069,14 +3069,14 @@
   },
   {
     "teal": 753,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       758
     ]
   },
   {
     "teal": 756,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       759,
       760,
@@ -3085,7 +3085,7 @@
   },
   {
     "teal": 757,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       762,
       763,
@@ -3094,7 +3094,7 @@
   },
   {
     "teal": 760,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       765,
       766,
@@ -3103,7 +3103,7 @@
   },
   {
     "teal": 761,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       768,
       769,
@@ -3112,7 +3112,7 @@
   },
   {
     "teal": 764,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       771,
       772
@@ -3120,28 +3120,28 @@
   },
   {
     "teal": 765,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       773
     ]
   },
   {
     "teal": 766,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       774
     ]
   },
   {
     "teal": 767,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       775
     ]
   },
   {
     "teal": 768,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       776,
       777
@@ -3149,21 +3149,21 @@
   },
   {
     "teal": 769,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       778
     ]
   },
   {
     "teal": 770,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       779
     ]
   },
   {
     "teal": 773,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "errorMessage": "argument 2 (oraPayment) for createCustomShortcode must be a axfer transaction",
     "pc": [
       780
@@ -3171,7 +3171,7 @@
   },
   {
     "teal": 776,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       781,
       782
@@ -3179,7 +3179,7 @@
   },
   {
     "teal": 777,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       783,
       784
@@ -3187,21 +3187,21 @@
   },
   {
     "teal": 778,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       785
     ]
   },
   {
     "teal": 779,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       786
     ]
   },
   {
     "teal": 780,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       787,
       788
@@ -3209,21 +3209,21 @@
   },
   {
     "teal": 781,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       789
     ]
   },
   {
     "teal": 782,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       790
     ]
   },
   {
     "teal": 785,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "errorMessage": "argument 3 (mbrPayment) for createCustomShortcode must be a pay transaction",
     "pc": [
       791
@@ -3231,7 +3231,7 @@
   },
   {
     "teal": 788,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       792,
       793,
@@ -3240,28 +3240,28 @@
   },
   {
     "teal": 789,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       795
     ]
   },
   {
     "teal": 790,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       796
     ]
   },
   {
     "teal": 791,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       797
     ]
   },
   {
     "teal": 792,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       798,
       799,
@@ -3270,49 +3270,49 @@
   },
   {
     "teal": 793,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       801
     ]
   },
   {
     "teal": 794,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       802
     ]
   },
   {
     "teal": 795,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       803
     ]
   },
   {
     "teal": 796,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       804
     ]
   },
   {
     "teal": 797,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       805
     ]
   },
   {
     "teal": 798,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       806
     ]
   },
   {
     "teal": 804,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       807,
       808,
@@ -3321,14 +3321,14 @@
   },
   {
     "teal": 807,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       810
     ]
   },
   {
     "teal": 811,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       811,
       812
@@ -3336,28 +3336,28 @@
   },
   {
     "teal": 812,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       813
     ]
   },
   {
     "teal": 813,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       814
     ]
   },
   {
     "teal": 814,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       815
     ]
   },
   {
     "teal": 815,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       816,
       817,
@@ -3366,49 +3366,49 @@
   },
   {
     "teal": 816,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       819
     ]
   },
   {
     "teal": 817,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       820
     ]
   },
   {
     "teal": 818,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       821
     ]
   },
   {
     "teal": 819,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       822
     ]
   },
   {
     "teal": 820,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       823
     ]
   },
   {
     "teal": 821,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "pc": [
       824
     ]
   },
   {
     "teal": 824,
-    "source": "contracts/OLink.algo.ts:122",
+    "source": "contracts/OLink.algo.ts:123",
     "errorMessage": "Shortcode already exists",
     "pc": [
       825
@@ -3416,7 +3416,7 @@
   },
   {
     "teal": 828,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       826,
       827
@@ -3424,14 +3424,14 @@
   },
   {
     "teal": 829,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       828
     ]
   },
   {
     "teal": 830,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       829,
       830
@@ -3439,14 +3439,14 @@
   },
   {
     "teal": 831,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       831
     ]
   },
   {
     "teal": 832,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       832,
       833
@@ -3454,49 +3454,49 @@
   },
   {
     "teal": 833,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       834
     ]
   },
   {
     "teal": 834,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       835
     ]
   },
   {
     "teal": 835,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       836
     ]
   },
   {
     "teal": 836,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       837
     ]
   },
   {
     "teal": 837,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       838
     ]
   },
   {
     "teal": 838,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       839
     ]
   },
   {
     "teal": 839,
-    "source": "contracts/OLink.algo.ts:124",
+    "source": "contracts/OLink.algo.ts:126",
     "pc": [
       840,
       841
@@ -3504,7 +3504,7 @@
   },
   {
     "teal": 844,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "pc": [
       842,
       843
@@ -3512,7 +3512,7 @@
   },
   {
     "teal": 845,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "pc": [
       844,
       845
@@ -3520,7 +3520,7 @@
   },
   {
     "teal": 846,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "pc": [
       846,
       847
@@ -3528,14 +3528,14 @@
   },
   {
     "teal": 847,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "pc": [
       848
     ]
   },
   {
     "teal": 850,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "errorMessage": "transaction verification failed: {\"txn\":\"mbrPayment\",\"field\":\"receiver\",\"expected\":\"this.app.address\"}",
     "pc": [
       849
@@ -3543,7 +3543,7 @@
   },
   {
     "teal": 853,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "pc": [
       850,
       851
@@ -3551,7 +3551,7 @@
   },
   {
     "teal": 854,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "pc": [
       852,
       853
@@ -3559,7 +3559,7 @@
   },
   {
     "teal": 855,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "pc": [
       854,
       855
@@ -3567,14 +3567,14 @@
   },
   {
     "teal": 856,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "pc": [
       856
     ]
   },
   {
     "teal": 859,
-    "source": "contracts/OLink.algo.ts:126",
+    "source": "contracts/OLink.algo.ts:128",
     "errorMessage": "transaction verification failed: {\"txn\":\"mbrPayment\",\"field\":\"amount\",\"expected\":\"mbrPaymentAmount\"}",
     "pc": [
       857
@@ -3582,7 +3582,7 @@
   },
   {
     "teal": 868,
-    "source": "contracts/OLink.algo.ts:127",
+    "source": "contracts/OLink.algo.ts:129",
     "pc": [
       858,
       859
@@ -3590,7 +3590,7 @@
   },
   {
     "teal": 869,
-    "source": "contracts/OLink.algo.ts:128",
+    "source": "contracts/OLink.algo.ts:130",
     "pc": [
       860,
       861
@@ -3598,7 +3598,7 @@
   },
   {
     "teal": 870,
-    "source": "contracts/OLink.algo.ts:128",
+    "source": "contracts/OLink.algo.ts:130",
     "pc": [
       862,
       863
@@ -3606,14 +3606,14 @@
   },
   {
     "teal": 871,
-    "source": "contracts/OLink.algo.ts:128",
+    "source": "contracts/OLink.algo.ts:130",
     "pc": [
       864
     ]
   },
   {
     "teal": 874,
-    "source": "contracts/OLink.algo.ts:128",
+    "source": "contracts/OLink.algo.ts:130",
     "errorMessage": "transaction verification failed: {\"txn\":\"oraPayment\",\"field\":\"assetReceiver\",\"expected\":\"this.app.address\"}",
     "pc": [
       865
@@ -3621,7 +3621,7 @@
   },
   {
     "teal": 877,
-    "source": "contracts/OLink.algo.ts:127",
+    "source": "contracts/OLink.algo.ts:129",
     "pc": [
       866,
       867
@@ -3629,7 +3629,7 @@
   },
   {
     "teal": 878,
-    "source": "contracts/OLink.algo.ts:129",
+    "source": "contracts/OLink.algo.ts:131",
     "pc": [
       868,
       869
@@ -3637,7 +3637,7 @@
   },
   {
     "teal": 879,
-    "source": "contracts/OLink.algo.ts:129",
+    "source": "contracts/OLink.algo.ts:131",
     "pc": [
       870,
       871
@@ -3645,21 +3645,21 @@
   },
   {
     "teal": 880,
-    "source": "contracts/OLink.algo.ts:129",
+    "source": "contracts/OLink.algo.ts:131",
     "pc": [
       872
     ]
   },
   {
     "teal": 881,
-    "source": "contracts/OLink.algo.ts:129",
+    "source": "contracts/OLink.algo.ts:131",
     "pc": [
       873
     ]
   },
   {
     "teal": 884,
-    "source": "contracts/OLink.algo.ts:129",
+    "source": "contracts/OLink.algo.ts:131",
     "errorMessage": "transaction verification failed: {\"txn\":\"oraPayment\",\"field\":\"assetAmount\",\"expected\":\"this.customLinkPrice.value\"}",
     "pc": [
       874
@@ -3667,7 +3667,7 @@
   },
   {
     "teal": 887,
-    "source": "contracts/OLink.algo.ts:127",
+    "source": "contracts/OLink.algo.ts:129",
     "pc": [
       875,
       876
@@ -3675,7 +3675,7 @@
   },
   {
     "teal": 888,
-    "source": "contracts/OLink.algo.ts:130",
+    "source": "contracts/OLink.algo.ts:132",
     "pc": [
       877,
       878
@@ -3683,28 +3683,28 @@
   },
   {
     "teal": 889,
-    "source": "contracts/OLink.algo.ts:130",
+    "source": "contracts/OLink.algo.ts:132",
     "pc": [
       879
     ]
   },
   {
     "teal": 890,
-    "source": "contracts/OLink.algo.ts:130",
+    "source": "contracts/OLink.algo.ts:132",
     "pc": [
       880
     ]
   },
   {
     "teal": 891,
-    "source": "contracts/OLink.algo.ts:130",
+    "source": "contracts/OLink.algo.ts:132",
     "pc": [
       881
     ]
   },
   {
     "teal": 894,
-    "source": "contracts/OLink.algo.ts:130",
+    "source": "contracts/OLink.algo.ts:132",
     "errorMessage": "transaction verification failed: {\"txn\":\"oraPayment\",\"field\":\"xferAsset\",\"expected\":\"this.oraAsaId.value\"}",
     "pc": [
       882
@@ -3712,7 +3712,7 @@
   },
   {
     "teal": 898,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       883,
       884
@@ -3720,28 +3720,28 @@
   },
   {
     "teal": 899,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       885
     ]
   },
   {
     "teal": 900,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       886
     ]
   },
   {
     "teal": 901,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       887
     ]
   },
   {
     "teal": 902,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       888,
       889,
@@ -3750,42 +3750,42 @@
   },
   {
     "teal": 903,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       891
     ]
   },
   {
     "teal": 904,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       892
     ]
   },
   {
     "teal": 905,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       893
     ]
   },
   {
     "teal": 906,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       894
     ]
   },
   {
     "teal": 907,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       895
     ]
   },
   {
     "teal": 908,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       896,
       897
@@ -3793,28 +3793,28 @@
   },
   {
     "teal": 909,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       898
     ]
   },
   {
     "teal": 910,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       899
     ]
   },
   {
     "teal": 911,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       900
     ]
   },
   {
     "teal": 912,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       901,
       902,
@@ -3823,28 +3823,28 @@
   },
   {
     "teal": 913,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       904
     ]
   },
   {
     "teal": 914,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       905
     ]
   },
   {
     "teal": 915,
-    "source": "contracts/OLink.algo.ts:133",
+    "source": "contracts/OLink.algo.ts:135",
     "pc": [
       906
     ]
   },
   {
     "teal": 919,
-    "source": "contracts/OLink.algo.ts:134",
+    "source": "contracts/OLink.algo.ts:136",
     "pc": [
       907,
       908
@@ -3852,7 +3852,7 @@
   },
   {
     "teal": 922,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       909,
       910
@@ -3860,14 +3860,14 @@
   },
   {
     "teal": 923,
-    "source": "contracts/OLink.algo.ts:121",
+    "source": "contracts/OLink.algo.ts:122",
     "pc": [
       911
     ]
   },
   {
     "teal": 928,
-    "source": "contracts/OLink.algo.ts:137",
+    "source": "contracts/OLink.algo.ts:139",
     "pc": [
       912,
       913,
@@ -3876,21 +3876,21 @@
   },
   {
     "teal": 929,
-    "source": "contracts/OLink.algo.ts:137",
+    "source": "contracts/OLink.algo.ts:139",
     "pc": [
       915
     ]
   },
   {
     "teal": 930,
-    "source": "contracts/OLink.algo.ts:137",
+    "source": "contracts/OLink.algo.ts:139",
     "pc": [
       916
     ]
   },
   {
     "teal": 934,
-    "source": "contracts/OLink.algo.ts:137",
+    "source": "contracts/OLink.algo.ts:139",
     "pc": [
       917,
       918,
@@ -3899,14 +3899,14 @@
   },
   {
     "teal": 937,
-    "source": "contracts/OLink.algo.ts:137",
+    "source": "contracts/OLink.algo.ts:139",
     "pc": [
       920
     ]
   },
   {
     "teal": 942,
-    "source": "contracts/OLink.algo.ts:138",
+    "source": "contracts/OLink.algo.ts:140",
     "pc": [
       921,
       922
@@ -3914,28 +3914,28 @@
   },
   {
     "teal": 943,
-    "source": "contracts/OLink.algo.ts:138",
+    "source": "contracts/OLink.algo.ts:140",
     "pc": [
       923
     ]
   },
   {
     "teal": 944,
-    "source": "contracts/OLink.algo.ts:138",
+    "source": "contracts/OLink.algo.ts:140",
     "pc": [
       924
     ]
   },
   {
     "teal": 945,
-    "source": "contracts/OLink.algo.ts:138",
+    "source": "contracts/OLink.algo.ts:140",
     "pc": [
       925
     ]
   },
   {
     "teal": 948,
-    "source": "contracts/OLink.algo.ts:138",
+    "source": "contracts/OLink.algo.ts:140",
     "errorMessage": "transaction verification failed: {\"txn\":\"this.txn\",\"field\":\"sender\",\"expected\":\"this.manager.value\"}",
     "pc": [
       926
@@ -3943,7 +3943,7 @@
   },
   {
     "teal": 952,
-    "source": "contracts/OLink.algo.ts:140",
+    "source": "contracts/OLink.algo.ts:142",
     "pc": [
       927,
       928
@@ -3951,21 +3951,21 @@
   },
   {
     "teal": 953,
-    "source": "contracts/OLink.algo.ts:140",
+    "source": "contracts/OLink.algo.ts:142",
     "pc": [
       929
     ]
   },
   {
     "teal": 954,
-    "source": "contracts/OLink.algo.ts:140",
+    "source": "contracts/OLink.algo.ts:142",
     "pc": [
       930
     ]
   },
   {
     "teal": 955,
-    "source": "contracts/OLink.algo.ts:140",
+    "source": "contracts/OLink.algo.ts:142",
     "pc": [
       931,
       932
@@ -3973,14 +3973,14 @@
   },
   {
     "teal": 956,
-    "source": "contracts/OLink.algo.ts:140",
+    "source": "contracts/OLink.algo.ts:142",
     "pc": [
       933
     ]
   },
   {
     "teal": 957,
-    "source": "contracts/OLink.algo.ts:140",
+    "source": "contracts/OLink.algo.ts:142",
     "pc": [
       934,
       935
@@ -3988,7 +3988,7 @@
   },
   {
     "teal": 961,
-    "source": "contracts/OLink.algo.ts:142",
+    "source": "contracts/OLink.algo.ts:144",
     "pc": [
       936,
       937
@@ -3996,21 +3996,21 @@
   },
   {
     "teal": 962,
-    "source": "contracts/OLink.algo.ts:142",
+    "source": "contracts/OLink.algo.ts:144",
     "pc": [
       938
     ]
   },
   {
     "teal": 963,
-    "source": "contracts/OLink.algo.ts:142",
+    "source": "contracts/OLink.algo.ts:144",
     "pc": [
       939
     ]
   },
   {
     "teal": 966,
-    "source": "contracts/OLink.algo.ts:142",
+    "source": "contracts/OLink.algo.ts:144",
     "errorMessage": "No balance to withdraw",
     "pc": [
       940
@@ -4018,21 +4018,21 @@
   },
   {
     "teal": 975,
-    "source": "contracts/OLink.algo.ts:144",
+    "source": "contracts/OLink.algo.ts:146",
     "pc": [
       941
     ]
   },
   {
     "teal": 976,
-    "source": "contracts/OLink.algo.ts:144",
+    "source": "contracts/OLink.algo.ts:146",
     "pc": [
       942
     ]
   },
   {
     "teal": 977,
-    "source": "contracts/OLink.algo.ts:144",
+    "source": "contracts/OLink.algo.ts:146",
     "pc": [
       943,
       944
@@ -4040,7 +4040,7 @@
   },
   {
     "teal": 981,
-    "source": "contracts/OLink.algo.ts:145",
+    "source": "contracts/OLink.algo.ts:147",
     "pc": [
       945,
       946
@@ -4048,7 +4048,7 @@
   },
   {
     "teal": 982,
-    "source": "contracts/OLink.algo.ts:145",
+    "source": "contracts/OLink.algo.ts:147",
     "pc": [
       947,
       948
@@ -4056,7 +4056,7 @@
   },
   {
     "teal": 986,
-    "source": "contracts/OLink.algo.ts:146",
+    "source": "contracts/OLink.algo.ts:148",
     "pc": [
       949,
       950
@@ -4064,7 +4064,7 @@
   },
   {
     "teal": 987,
-    "source": "contracts/OLink.algo.ts:146",
+    "source": "contracts/OLink.algo.ts:148",
     "pc": [
       951,
       952
@@ -4072,7 +4072,7 @@
   },
   {
     "teal": 991,
-    "source": "contracts/OLink.algo.ts:147",
+    "source": "contracts/OLink.algo.ts:149",
     "pc": [
       953,
       954
@@ -4080,7 +4080,7 @@
   },
   {
     "teal": 992,
-    "source": "contracts/OLink.algo.ts:147",
+    "source": "contracts/OLink.algo.ts:149",
     "pc": [
       955,
       956
@@ -4088,21 +4088,21 @@
   },
   {
     "teal": 996,
-    "source": "contracts/OLink.algo.ts:148",
+    "source": "contracts/OLink.algo.ts:150",
     "pc": [
       957
     ]
   },
   {
     "teal": 997,
-    "source": "contracts/OLink.algo.ts:148",
+    "source": "contracts/OLink.algo.ts:150",
     "pc": [
       958
     ]
   },
   {
     "teal": 998,
-    "source": "contracts/OLink.algo.ts:148",
+    "source": "contracts/OLink.algo.ts:150",
     "pc": [
       959,
       960
@@ -4110,14 +4110,14 @@
   },
   {
     "teal": 1001,
-    "source": "contracts/OLink.algo.ts:144",
+    "source": "contracts/OLink.algo.ts:146",
     "pc": [
       961
     ]
   },
   {
     "teal": 1002,
-    "source": "contracts/OLink.algo.ts:144",
+    "source": "contracts/OLink.algo.ts:146",
     "pc": [
       962,
       963
@@ -4125,14 +4125,14 @@
   },
   {
     "teal": 1005,
-    "source": "contracts/OLink.algo.ts:144",
+    "source": "contracts/OLink.algo.ts:146",
     "pc": [
       964
     ]
   },
   {
     "teal": 1006,
-    "source": "contracts/OLink.algo.ts:137",
+    "source": "contracts/OLink.algo.ts:139",
     "pc": [
       965
     ]

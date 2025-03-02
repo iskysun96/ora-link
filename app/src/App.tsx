@@ -3,14 +3,12 @@ import Button from "./components/Button";
 import Header from "./Header";
 import { Separator } from "radix-ui";
 import { useEffect, useMemo, useState } from "react";
-import { AlgorandClient } from "@algorandfoundation/algokit-utils";
 import { OLinkFactory } from "./lib/OLinkClient";
 
 import algosdk from "algosdk";
 import { extractShortcodeFromUrl } from "./lib/utils";
 import LocationRedirectPanel from "./LocationRedirectPanel";
-
-const appId = BigInt(734703029); // Your app ID
+import { APP_CONFIG } from "./constants";
 
 function App() {
   const { activeAccount, transactionSigner, algodClient } = useWallet();
@@ -29,13 +27,13 @@ function App() {
   const [locationUrl, setLocationUrl] = useState<string>();
 
   const appClient = useMemo(() => {
-    const algorand = AlgorandClient.testNet();
+    const algorand = APP_CONFIG.client;
     const olinkFactory = new OLinkFactory({
       algorand: algorand,
     });
 
     const appClient = olinkFactory.getAppClientById({
-      appId,
+      appId: APP_CONFIG.appId,
       defaultSender: activeAccount?.address,
       defaultSigner: transactionSigner,
     });
@@ -103,7 +101,7 @@ function App() {
 
       const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
         from: activeAccount.address,
-        to: algosdk.getApplicationAddress(appId),
+        to: algosdk.getApplicationAddress(APP_CONFIG.appId),
         amount: mbrAmount,
         suggestedParams,
       });
@@ -149,7 +147,7 @@ function App() {
 
       const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
         from: activeAccount.address,
-        to: algosdk.getApplicationAddress(appId),
+        to: algosdk.getApplicationAddress(APP_CONFIG.appId),
         amount: mbrAmount,
         suggestedParams,
       });
@@ -163,7 +161,7 @@ function App() {
 
       const oraPayment = algosdk.makeAssetTransferTxnWithSuggestedParamsFromObject({
         from: activeAccount.address,
-        to: algosdk.getApplicationAddress(appId),
+        to: algosdk.getApplicationAddress(APP_CONFIG.appId),
         assetIndex: Number(oraAsaId),
         amount: customLinkPrice,
         suggestedParams,

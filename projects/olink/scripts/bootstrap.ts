@@ -4,7 +4,7 @@ import { appClient, creator } from './constants';
 const main = async () => {
   const assetId = BigInt(734611834);
 
-  await appClient.appClient.fundAppAccount({ amount: algo(2), sender: creator.addr });
+  await appClient.appClient.fundAppAccount({ amount: algo(0.2), sender: creator.addr });
   await appClient.send.bootstrap({
     args: { oraAsaId: assetId, customLinkPrice: 100000000 },
     sender: creator.addr,

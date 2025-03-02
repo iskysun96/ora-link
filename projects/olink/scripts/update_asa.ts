@@ -1,11 +1,11 @@
 import { microAlgo } from '@algorandfoundation/algokit-utils';
-import { appClient, creator, ORA_ASSET_ID } from './constants';
+import { appClient, creator, APP_CONFIG } from './constants';
 
 const main = async () => {
   await appClient.send.updateCustomLinkCost({
-    args: { asaId: ORA_ASSET_ID, newCost: 100000000 },
+    args: { asaId: APP_CONFIG.oraAssetID, newCost: 100000000 },
     sender: creator.addr,
-    assetReferences: [ORA_ASSET_ID],
+    assetReferences: [APP_CONFIG.oraAssetID],
     extraFee: microAlgo(1000),
   });
 };
