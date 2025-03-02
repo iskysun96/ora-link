@@ -98,6 +98,7 @@ function App() {
     try {
       const suggestedParams = await algodClient.getTransactionParams().do();
 
+      // + 4 is for the two-byte headers for the shortcode and the URL
       const mbrAmount = 2500 + 400 * (url.length + 8 + 4);
 
       const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
@@ -143,6 +144,7 @@ function App() {
     try {
       const suggestedParams = await algodClient.getTransactionParams().do();
 
+      // + 4 is for the two-byte headers for the shortcode and the URL
       const mbrAmount = 2500 + 400 * (url.length + customShortCode.length + 4);
 
       const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
