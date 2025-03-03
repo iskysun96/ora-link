@@ -18,7 +18,7 @@ const WalletOption = ({ wallet }: { wallet: Wallet }) => {
   };
 
   return (
-    <button onClick={handleConnect} disabled={connecting} className="flex gap-2 items-center">
+    <button onClick={handleConnect} disabled={connecting} className="flex gap-2 items-center cursor-pointer">
       <img src={wallet.metadata.icon} alt={wallet.metadata.name} className="size-8" />
       <span>{wallet.metadata.name}</span>
     </button>
