@@ -208,15 +208,15 @@ function App() {
               <div className="text-base grow p-1 text-center">ORANGE LINK</div>
               <button className="pr-2">
                 <Tooltip.Provider>
-                  <Tooltip.Root>
+                  <Tooltip.Root delayDuration={0}>
                     <Tooltip.Trigger asChild>
-                      <button className="flex items-center">
+                      <button className="flex items-center cursor-pointer">
                         <Info className="size-4" />
                       </button>
                     </Tooltip.Trigger>
                     <Tooltip.Portal>
                       <Tooltip.Content className="w-64 flex flex-col gap-2 select-none rounded bg-white p-4 drop-shadow-sm text-sm ">
-                        <p>Orange Link is a decentralized link shortener built on Algorand.</p>
+                        <p>Orange Link is a decentralized, open-source link shortener built on Algorand.</p>
                         <p>
                           Learn more{" "}
                           <a href="https://github.com/bitshiftmod/ora-link" target="_blank" rel="noopener noreferrer" className="underline">
