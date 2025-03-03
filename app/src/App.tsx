@@ -1,7 +1,7 @@
 import { useWallet } from "@txnlab/use-wallet-react";
 import Button from "./components/Button";
 import Header from "./Header";
-import { Separator } from "radix-ui";
+import { Separator, Tooltip } from "radix-ui";
 import { useEffect, useMemo, useState } from "react";
 import { OLinkFactory } from "./lib/OLinkClient";
 
@@ -9,6 +9,7 @@ import algosdk from "algosdk";
 import { extractShortcodeFromUrl } from "./lib/utils";
 import LocationRedirectPanel from "./LocationRedirectPanel";
 import { APP_CONFIG } from "./constants";
+import { Info } from "lucide-react";
 
 function App() {
   const { activeAccount, transactionSigner, algodClient } = useWallet();
@@ -49,19 +50,24 @@ function App() {
 
   useEffect(() => {
     const checkLocation = async () => {
+      if (checkingLocation) return;
       setCheckingLocation(true);
       const location = window.location.href;
       const shortcode = extractShortcodeFromUrl(location);
       console.log("Location shortcode:", shortcode);
       if (shortcode) {
-        // setShortcode(shortcode);
         try {
-          const resolvedUrl = await appClient.resolveShortcode({ args: [shortcode] });
+          const resolvedUrl = await appClient.resolveShortcode({
+            args: [shortcode],
+            sender: "ERXD6RUWJ5YKZEXGLSE3N3MRJPVL3AWKX6VUMFJRE7W4EGA5HQR5LXBE4E",
+          });
           setLocationUrl(resolvedUrl);
           console.log("Location URL:", resolvedUrl);
         } catch (error) {
           console.error("Invalid shortcode:", error);
         }
+      } else {
+        setLocationUrl(undefined);
       }
       setCheckingLocation(false);
     };
@@ -194,7 +200,34 @@ function App() {
           <Header />
 
           <div className="flex flex-col min-w-96 self-center m-auto rounded-xl bg-orange-200 drop-shadow-sm">
-            <div className="text-base w-full rounded-t-xl bg-orange-500 text-orange-100 p-1 text-center">ORANGE LINK</div>
+            <div className="flex w-full relative rounded-t-xl bg-orange-500 text-orange-100 items-center">
+              <div className="size-4 pl-2" />
+              <div className="text-base grow p-1 text-center">ORANGE LINK</div>
+              <button className="pr-2">
+                <Tooltip.Provider>
+                  <Tooltip.Root>
+                    <Tooltip.Trigger asChild>
+                      <button className="flex items-center">
+                        <Info className="size-4" />
+                      </button>
+                    </Tooltip.Trigger>
+                    <Tooltip.Portal>
+                      <Tooltip.Content className="w-64 flex flex-col gap-2 select-none rounded bg-white p-4 drop-shadow-sm text-sm ">
+                        <p>Orange Link is a decentralized link shortener built on Algorand.</p>
+                        <p>
+                          Learn more{" "}
+                          <a href="https://github.com/bitshiftmod/ora-link" target="_blank" rel="noopener noreferrer" className="underline">
+                            here
+                          </a>
+                        </p>
+
+                        <Tooltip.Arrow className="fill-white" />
+                      </Tooltip.Content>
+                    </Tooltip.Portal>
+                  </Tooltip.Root>
+                </Tooltip.Provider>
+              </button>
+            </div>
 
             <div className="p-4 text-left text-sm flex flex-col">
               <div className="mb-4">
