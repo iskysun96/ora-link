@@ -27,6 +27,10 @@ function App() {
   const [checkingLocation, setCheckingLocation] = useState(false);
   const [locationUrl, setLocationUrl] = useState<string>();
 
+  const canShorten = useMemo(() => {
+    return url.length > 0 && activeAccount && ((useCustomShortcode && customShortcode.length > 0) || !useCustomShortcode);
+  }, [url, activeAccount, useCustomShortcode, customShortcode]);
+
   const appClient = useMemo(() => {
     const algorand = APP_CONFIG.client;
     const olinkFactory = new OLinkFactory({
@@ -80,13 +84,12 @@ function App() {
   }, []);
 
   const resolveShortcode = async (shortcode: string) => {
-    if (!appClient || !activeAccount || !transactionSigner) return;
+    if (!appClient) return;
 
     try {
       const result = await appClient.resolveShortcode({
         args: [shortcode],
-        sender: activeAccount.address,
-        signer: transactionSigner,
+        sender: "ERXD6RUWJ5YKZEXGLSE3N3MRJPVL3AWKX6VUMFJRE7W4EGA5HQR5LXBE4E",
       });
 
       console.log(result);
@@ -252,7 +255,7 @@ function App() {
                   resolveShortcode(shortcode);
                 }}
                 text="Resolve"
-                disabled={shortcode.length === 0 || activeAccount === undefined}
+                disabled={shortcode.length === 0}
               />
             </div>
 
@@ -312,8 +315,8 @@ function App() {
                     shortenUrl(url);
                   }
                 }}
-                text="Shorten"
-                disabled={url.length === 0 || activeAccount === undefined || (useCustomShortcode && customShortcode.length == 0)}
+                text={activeAccount == null ? "Connect Wallet" : "Shorten"}
+                disabled={!canShorten}
               />
             </div>
           </div>
