@@ -1,4 +1,4 @@
-import { describe, test, expect, beforeAll, beforeEach } from '@jest/globals';
+import { describe, test, expect, beforeAll } from '@jest/globals';
 import { algorandFixture } from '@algorandfoundation/algokit-utils/testing';
 import { algo, Config, microAlgo } from '@algorandfoundation/algokit-utils';
 import algosdk from 'algosdk';
@@ -9,9 +9,10 @@ const fixture = algorandFixture({ testAccountFunding: algo(1000) });
 Config.configure({ populateAppCallResources: true });
 
 let appClient: OLinkClient;
+let assetId: number | bigint;
 
 describe('OLink', () => {
-  beforeEach(fixture.beforeEach);
+  // beforeEach(fixture.beforeEach);
 
   beforeAll(async () => {
     await fixture.beforeEach();
@@ -28,7 +29,7 @@ describe('OLink', () => {
     appClient = createResult.appClient;
     await appClient.appClient.fundAppAccount({ amount: algo(0.2) });
 
-    const assetId = await createTestAsset(testAccount, algorand, testAccount.signer);
+    assetId = await createTestAsset(testAccount, algorand, testAccount.signer);
 
     await appClient.send.bootstrap({
       args: { oraAsaId: assetId, customLinkPrice: 10000000 },
@@ -38,7 +39,6 @@ describe('OLink', () => {
     });
   });
 
-  // TODO: test invalid MBR amount, url length, already created
   test('createShortcode', async () => {
     const { testAccount, algod } = fixture.context;
     const url = 'https://algorand.co';
@@ -74,33 +74,50 @@ describe('OLink', () => {
     expect(resolvedUrl2.return).toBe(url);
   });
 
-  // test('createShortcode MBR payment is correct', async () => {
-  //   const { testAccount, algod } = fixture.context;
-  //   let url = 'https://test.url';
+  test('withdraw', async () => {
+    const { testAccount, algod } = fixture.context;
+    const url = 'https://testforwithdraw.url';
+    const shortcode = 'testforwithdraw';
+    const mbrAmount = 2500 + 400 * (url.length + shortcode.length + 4);
 
-  //   for (let i = 0; i < 600; i += 1) {
-  //     const mbrAmount = 2500 + 400 * (url.length + 8 + 4);
+    const oraPayment = algosdk.makeAssetTransferTxnWithSuggestedParamsFromObject({
+      from: testAccount.addr,
+      to: appClient.appAddress,
+      assetIndex: Number(assetId),
+      amount: 10000000,
+      suggestedParams: await algod.getTransactionParams().do(),
+    });
 
-  //     console.log('iteration', i, 'mbrAmount', mbrAmount, url.length + 8);
+    const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
+      from: testAccount.addr,
+      to: appClient.appAddress,
+      amount: mbrAmount,
+      suggestedParams: await algod.getTransactionParams().do(),
+    });
 
-  //     const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
-  //       from: testAccount.addr,
-  //       to: appClient.appAddress,
-  //       amount: mbrAmount,
-  //       // eslint-disable-next-line no-await-in-loop
-  //       suggestedParams: await algod.getTransactionParams().do(),
-  //     });
+    const shortCode = await appClient.send.createCustomShortcode({
+      args: { oraPayment, mbrPayment, shortcode, url },
+      sender: testAccount.addr,
+      signer: testAccount.signer,
+      populateAppCallResources: true,
+    });
 
-  //     // eslint-disable-next-line no-await-in-loop
-  //     const result = await appClient.send.createShortcode({
-  //       args: { mbrPayment, url },
-  //       sender: testAccount.addr,
-  //       signer: testAccount.signer,
-  //     });
+    expect(shortCode.return).toBe(shortcode);
 
-  //     console.log(result);
+    await appClient.send.withdraw({
+      args: [],
+      sender: testAccount.addr,
+      populateAppCallResources: true,
+      assetReferences: [BigInt(assetId)],
+      extraFee: microAlgo(1000),
+    });
 
-  //     url += 'a';
-  //   }
-  // });
+    // Check app address asset balance
+    const appAccountAssetInfo = await algod.accountAssetInformation(appClient.appAddress, Number(assetId)).do();
+    expect(appAccountAssetInfo['asset-holding'].amount).toBe(0);
+
+    // Check test account asset balance
+    const testAccountAssetInfo = await algod.accountAssetInformation(testAccount.addr, Number(assetId)).do();
+    expect(testAccountAssetInfo['asset-holding'].amount).toBe(400000000000000);
+  });
 });
