@@ -47,7 +47,7 @@ function App() {
 
   const resolvedShortcodeURL = useMemo(() => {
     if (resolvedShortcode) {
-      return `${window.location.href}#${resolvedShortcode}`;
+      return `${window.location.origin}${window.location.pathname}#${resolvedShortcode}`;
     }
     return undefined;
   }, [resolvedShortcode]);
