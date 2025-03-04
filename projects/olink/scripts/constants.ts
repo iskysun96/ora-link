@@ -13,8 +13,7 @@ const TESTNET_APP_CONFIG = {
 };
 
 const MAINNET_APP_CONFIG = {
-  // TODO: replace with real mainnet app id
-  appId: 0,
+  appId: 2811675048,
   oraAssetID: BigInt(1284444444),
   client: AlgorandClient.mainNet(),
 };

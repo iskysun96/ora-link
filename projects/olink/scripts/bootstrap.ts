@@ -1,8 +1,8 @@
 import { algo, microAlgo } from '@algorandfoundation/algokit-utils';
-import { appClient, creator } from './constants';
+import { appClient, creator, APP_CONFIG } from './constants';
 
 const main = async () => {
-  const assetId = BigInt(734611834);
+  const assetId = APP_CONFIG.oraAssetID;
 
   await appClient.appClient.fundAppAccount({ amount: algo(0.2), sender: creator.addr });
   await appClient.send.bootstrap({
