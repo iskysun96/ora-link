@@ -1,24 +1,30 @@
-import { describe, test, expect, beforeAll } from '@jest/globals';
+import { describe, test, expect, beforeAll, beforeEach } from '@jest/globals';
 import { algorandFixture } from '@algorandfoundation/algokit-utils/testing';
-import { algo, Config, microAlgo } from '@algorandfoundation/algokit-utils';
-import algosdk from 'algosdk';
+import { algo, Config, microAlgo, AlgorandClient } from '@algorandfoundation/algokit-utils';
+import { TransactionSignerAccount } from '@algorandfoundation/algokit-utils/types/account';
 import { OLinkClient, OLinkFactory } from '../contracts/clients/OLinkClient';
 import { createTestAsset } from './utils';
 
-const fixture = algorandFixture({ testAccountFunding: algo(1000) });
+// Configure this once, outside of any test hooks
 Config.configure({ populateAppCallResources: true });
 
+// Create the fixture outside of any hooks
+const fixture = algorandFixture({ testAccountFunding: algo(1000) });
 let appClient: OLinkClient;
 let assetId: number | bigint;
+// Store these at the top level so they can be accessed by all tests
+let testAccount: TransactionSignerAccount;
+let algorand: AlgorandClient;
 
 describe('OLink', () => {
-  // beforeEach(fixture.beforeEach);
-
+  // Initialize the fixture once before all tests
   beforeAll(async () => {
+    // Initialize the fixture
     await fixture.beforeEach();
 
-    const { testAccount } = fixture.context;
-    const { algorand } = fixture;
+    // Store these values at the top level
+    testAccount = fixture.context.testAccount;
+    algorand = fixture.algorand;
 
     const factory = new OLinkFactory({
       algorand,
@@ -29,7 +35,7 @@ describe('OLink', () => {
     appClient = createResult.appClient;
     await appClient.appClient.fundAppAccount({ amount: algo(0.2) });
 
-    assetId = await createTestAsset(testAccount, algorand, testAccount.signer);
+    assetId = await createTestAsset(testAccount, algorand);
 
     await appClient.send.bootstrap({
       args: { oraAsaId: assetId, customLinkPrice: 10000000 },
@@ -39,16 +45,17 @@ describe('OLink', () => {
     });
   });
 
+  // Reset the fixture state before each test
+  beforeEach(fixture.beforeEach);
+
   test('createShortcode', async () => {
-    const { testAccount, algod } = fixture.context;
     const url = 'https://algorand.co';
     const mbrAmount = 2500 + 400 * (url.length + 8 + 4);
 
-    const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
-      from: testAccount.addr,
-      to: appClient.appAddress,
-      amount: mbrAmount,
-      suggestedParams: await algod.getTransactionParams().do(),
+    const mbrPayment = await algorand.createTransaction.payment({
+      sender: testAccount.addr,
+      receiver: appClient.appAddress,
+      amount: microAlgo(mbrAmount),
     });
 
     const shortCode = await appClient.send.createShortcode({
@@ -75,32 +82,33 @@ describe('OLink', () => {
   });
 
   test('withdraw', async () => {
-    const { testAccount, algod } = fixture.context;
     const url = 'https://testforwithdraw.url';
     const shortcode = 'testforwithdraw';
     const mbrAmount = 2500 + 400 * (url.length + shortcode.length + 4);
 
-    const oraPayment = algosdk.makeAssetTransferTxnWithSuggestedParamsFromObject({
-      from: testAccount.addr,
-      to: appClient.appAddress,
-      assetIndex: Number(assetId),
-      amount: 10000000,
-      suggestedParams: await algod.getTransactionParams().do(),
+    const oraPayment = await algorand.createTransaction.assetTransfer({
+      sender: testAccount.addr,
+      receiver: appClient.appAddress,
+      assetId: BigInt(assetId),
+      amount: BigInt(10000000),
     });
 
-    const mbrPayment = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
-      from: testAccount.addr,
-      to: appClient.appAddress,
-      amount: mbrAmount,
-      suggestedParams: await algod.getTransactionParams().do(),
+    const mbrPayment = await algorand.createTransaction.payment({
+      sender: testAccount.addr,
+      receiver: appClient.appAddress,
+      amount: microAlgo(mbrAmount),
     });
+
+    console.log('testing1', oraPayment);
 
     const shortCode = await appClient.send.createCustomShortcode({
-      args: { oraPayment, mbrPayment, shortcode, url },
+      args: { mbrPayment, oraPayment, shortcode, url },
       sender: testAccount.addr,
       signer: testAccount.signer,
       populateAppCallResources: true,
     });
+
+    console.log('testing', shortCode.return);
 
     expect(shortCode.return).toBe(shortcode);
 
@@ -113,11 +121,11 @@ describe('OLink', () => {
     });
 
     // Check app address asset balance
-    const appAccountAssetInfo = await algod.accountAssetInformation(appClient.appAddress, Number(assetId)).do();
-    expect(appAccountAssetInfo['asset-holding'].amount).toBe(0);
+    const appAccountAssetInfo = await algorand.asset.getAccountInformation(appClient.appAddress, BigInt(assetId));
+    expect(appAccountAssetInfo.balance).toBe(BigInt(0));
 
     // Check test account asset balance
-    const testAccountAssetInfo = await algod.accountAssetInformation(testAccount.addr, Number(assetId)).do();
-    expect(testAccountAssetInfo['asset-holding'].amount).toBe(400000000000000);
+    const testAccountAssetInfo = await algorand.asset.getAccountInformation(testAccount.addr, BigInt(assetId));
+    expect(testAccountAssetInfo.balance).toBe(BigInt(400000000000000));
   });
 });

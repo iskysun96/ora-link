@@ -1,25 +1,26 @@
-import { AlgorandClient, getTransactionParams, sendTransaction } from '@algorandfoundation/algokit-utils';
-import { Account, Algodv2, makeAssetTransferTxnWithSuggestedParamsFromObject, TransactionSigner } from 'algosdk';
+import { AlgorandClient } from '@algorandfoundation/algokit-utils';
+import { AlgoConfig } from '@algorandfoundation/algokit-utils/types/network-client';
+import { TransactionSignerAccount } from '@algorandfoundation/algokit-utils/types/account';
+import { Account } from 'algosdk';
 
 const TOKEN_SUPPLY = 4000000_00000000;
 const TOKEN_DECIMALS = 8;
 
-export const optInAsset = async (from: Account, assetId: number, algod: Algodv2) => {
+export const optInAsset = async (algorandClient: AlgorandClient, from: Account, assetId: bigint) => {
   // opt-in txn for user for the asset
-  const optInTxn = makeAssetTransferTxnWithSuggestedParamsFromObject({
-    from: from.addr,
-    to: from.addr,
-    amount: 0,
-    assetIndex: assetId,
-    suggestedParams: await getTransactionParams(undefined, algod),
+  await algorandClient.send.assetOptIn({
+    sender: from.addr,
+    assetId,
   });
-
-  await sendTransaction({ transaction: optInTxn, from }, algod);
 };
 
-export const createTestAsset = async (from: Account, algod: AlgorandClient, signer: TransactionSigner) => {
+export const getAlgorandClient = async (config: AlgoConfig): Promise<AlgorandClient> => {
+  return AlgorandClient.fromConfig(config);
+};
+
+export const createTestAsset = async (from: TransactionSignerAccount, algorandClient: AlgorandClient) => {
   console.log('Creating asset...');
-  const res = await algod.send.assetCreate({
+  const res = await algorandClient.send.assetCreate({
     sender: from.addr,
     manager: from.addr,
     assetName: 'Test Asset',
@@ -27,12 +28,9 @@ export const createTestAsset = async (from: Account, algod: AlgorandClient, sign
     decimals: TOKEN_DECIMALS,
     total: BigInt(TOKEN_SUPPLY),
     defaultFrozen: false,
-    signer,
   });
 
-  const { confirmation } = res;
-
-  const assetId = confirmation?.assetIndex;
+  const assetId = res?.assetId;
 
   if (assetId === undefined) {
     throw new Error('failed to create asset');
